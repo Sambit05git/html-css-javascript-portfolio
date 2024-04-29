@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sam's portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sambit Pradhan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sambit profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello 👋, I'm</p>
+        <h1 class="title">Sambit K. Pradhan</h1>
+        <p class="section__text__p2">Software Developer Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+          View CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me 
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sambit-kumar-pradhan-49b205219/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Sambit0510'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+        <h1 class="title">Getting to Know Me 😊 </h1>
+      <p class="section__text__p1">Professional Background and Skills :</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">   
+          <!-- <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div> -->
+          <div class="text-container">
+            <p>
+                Greetings 🙏 ! I'm Sambit Kumar Pradhan, a final year Computer Science and Engineering student at NIT Silchar. Fueled by a passion for problem-solving, I have cultivated a strong foundation in Data Structures and Algorithms. My technological repertoire includes proficiency in languages such as C++, Java, and expertise in web technologies like HTML, CSS, JavaScript, Node.js, React.js, MongoDB, Angular, and Django. I am motivated by the opportunities and challenges that technology offers, and I am always eager to explore and experiment with new ideas and solutions. My goal is to use my skills and passions to create positive social impact and value.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <!-- this is my edited  -->
+    <section id="Education">
+        <h1 class="title">Scholarly Journey 🏫</h1>
+          <p class="section__text__p1">Educational Background</p>
+        <div class="education-details-container">
+          <div class="education-container">
+            <img src="./assets/college_logo.png" alt="College Logo" class="college-logo" />
+            <div class="education-info">
+              <h3>National Institute of technology </h3>
+              <p>Bachelors of Technology</p>
+              <p>Computer Science Engineering</p>
+              <p>CGPA: 8.3/10</p>
+              <p>Year: 2020 - 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-details-container">
+            <div class="education-container">
+              <img src="./assets/12th.png" alt="College Logo" class="college-logo" />
+              <div class="education-info">
+                <h3>S.R Public School , Kota , Rajasthan</h3>
+                <p>Higher Secondary Education</p>
+                <p>Physics , Chemistry , Mathematics </p>
+                <p>Percetage 87.5/100</p>
+                <p>Year: 2017 - 2019</p>
+              </div>
+            </div>
+          </div>
+       
+          <div class="education-details-container">
+            <div class="education-container">
+              <img src="./assets/10th.png" alt="College Logo" class="college-logo" />
+              <div class="education-info">
+                <h3>D.A.V Public School , Jagannath , Dera </h3>
+                <p>Senior secondary Education </p>
+                <p>English</p>
+                <p>Percetage 95/100</p>
+                <p>Year: 2016- 2017</p>
+              </div>
+            </div>
+          </div>
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      
+      
+      <!-- till this I had edited  -->
+    <section id="experience">
+    <h1 class="title">Experience 🌐</h1>
+      <p class="section__text__p1">Explore My</p>
+      
+      <!-- <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+        <h3>Ex-SDE at Hostel Devta</h3>
+            <p>* Designed and developed the user authentication and authentication login page using MERN (MongoDB, Express.js, React.js,
+                    Node.js) technology in a team.</p>
+            <p>* Worked on react.js to build the frontend UI/ UX of the project.</p>
+            <p>* Elicitated software requirements, participating in daily project team huddles, reviewing user stories and creating
+                software development tasks in accordance to business needs with Azure DevOps.</p>
+            <!-- <a href="https://www.example.com">Visit Example Website</a> -->
+
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/HostelDevta.pdf')"
+          >
+         Link
+          </button>
+
+        </div>
+      </article>
+
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+        <h3>Research Intern at S.N Bose  </h3>
+            <p>* Collborated and did intense research on spam message detection in e-commerce website using Graph Neural Network technology.</p>
+            <p>* Build and trained the model to with real time data from legit websites. </p>
+            <p>* Implemented graph neural network (GNN) algorithms such as Graph Convolutional Networks (GCNs) or Graph Attention Networks (GATs) for message classification.</p>
+            <p>* Evaluated model performance through cross-validation and conducted rigorous testing on separate validation and test datasets.
+            </p>
+            <!-- <a href="https://www.example.com">Visit Example Website</a> -->
+
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/research.pdf')"
+          >
+         Link
+          </button>
+
+        </div>
+      </article>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+  <!-- again I edited skills  -->
+
+  <section id="skills">
+    <h1 class="title">Skills Set 🛠️</h1>
+    <p class="section__text__p1">My Expertise</p>
+  
+    <div class="skills-container">
+      <!-- HTML Skill -->
+      <div class="skill" data-rating="100">
+        <img src="./assets/html.png" alt="HTML Logo" class="skill-logo" />
+        <div class="skill-details">
+          <h3></h3>
+          <div class="skill-rating">
+            <div class="fill" style="width: 100%;"></div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CSS Skill -->
+      <div class="skill" data-rating="70">
+        <img src="./assets/css.png" alt="CSS Logo" class="skill-logo" />
+        <div class="skill-details">
+          <h3></h3>
+          <div class="skill-rating">
+            <div class="fill" style="width: 70%;"></div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- JavaScript Skill -->
+      <div class="skill" data-rating="99">
+        <img src="./assets/js.png" alt="JavaScript Logo" class="skill-logo" />
+        <div class="skill-details">
+          <h3></h3>
+          <div class="skill-rating">
+            <div class="fill" style="width: 99%;"></div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- JavaScript Skill -->
+        <div class="skill" data-rating="99">
+            <img src="./assets/nodejs.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 99%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+
+             <!-- JavaScript Skill -->
+        <div class="skill" data-rating="70">
+            <img src="./assets/reactjs.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 70%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+
+                 <!-- JavaScript Skill -->
+        <div class="skill" data-rating="70">
+            <img src="./assets/Exp.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 70%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- JavaScript Skill -->
+        <div class="skill" data-rating="40">
+            <img src="./assets/mg.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 40%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+                          <!-- JavaScript Skill -->
+        <div class="skill" data-rating="20">
+            <img src="./assets/angular.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 40%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+                               <!-- JavaScript Skill -->
+        <div class="skill" data-rating="100">
+            <img src="./assets/cpp.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 100%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="100">
+            <img src="./assets/c.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 100%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="60">
+            <img src="./assets/python.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 60%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="50">
+            <img src="./assets/java.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 60%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="50">
+            <img src="./assets/mysql.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 50%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="100">
+            <img src="./assets/oops.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 100%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill" data-rating="70">
+            <img src="./assets/fire.png" alt="JavaScript Logo" class="skill-logo" />
+            <div class="skill-details">
+              <h3></h3>
+              <div class="skill-rating">
+                <div class="fill" style="width: 70%;"></div>
+                <div class="empty"></div>
+              </div>
+            </div>
+          </div>
+      <!-- Add more skills here with the same structure -->
+      <!-- <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+    /> -->
+    </div>
+
+    
+  </section>
+  
+  
+  <!-- my editing ends here  -->
+    <section id="projects">
+    <h1 class="title">Projects 🚀</h1>
+      <p class="section__text__p1">Browse My Recent</p>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cloud.png"
+                alt="CloudKeep: Everlasting Note Nexus"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">CloudKeep: Everlasting Note Nexus</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/reddit.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EmotionEcho: Navigating Reddit's Sentiment Seas</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sambit0510/sentiment-analysis-/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mouse.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GestureWise: Your Virtual Mouse Companion</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sambit0510/irtual-Mouse-Hand-Gesture-Control'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+        <h1 class="title"> Let's Connect 🤙 </h1>
+      <p class="section__text__p1">Contact info</p>
+    
+      <div class="contact-info-upper-container">
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">0510sambitpradhan@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sambit-kumar-pradhan-49b205219/">LinkedIn</a></p>
+        </div>
+
+        <!-- <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a +91-9509964760 >Mobile no</a></p>
+          </div> -->
+
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Education">Education</a></li>
+             <li><a href="#experience">Experience</a></li>
+             <li> <a href="#skills">Skills</a></li>
+             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sambit . All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
